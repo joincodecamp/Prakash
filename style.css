@@ -78,7 +78,7 @@ h4 {
 }
 
 .active-color {
-    color: #4dbfd9;
+   font-weight: 800;
 }
 
 .active-section {
@@ -100,3 +100,13 @@ h4 {
 #education {
     margin-top: 30px;
 }
+
+.media-link a i:hover, a{
+   color: #000ff0;
+}
+.hero-btn a:hover{
+    border: 2px solid;
+    color: #fff;
+    background-color: #000ff0;
+ }
+ 
