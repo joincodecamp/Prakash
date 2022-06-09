@@ -34,3 +34,22 @@ document.getElementById("d").innerHTML = d;
 
 
 const mon = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+var none = 'none';
+var block = 'block';
+
+function myClick() {
+    document.getElementById("click1").style.display = block;
+    document.getElementById("click2").style.display = none;
+    document.getElementById("click3").style.display = none;
+  }
+  function myClick1() {
+    document.getElementById("click1").style.display = none;
+    document.getElementById("click3").style.display = none;
+    document.getElementById("click2").style.display = block;
+  }
+  function myClick2() {
+    document.getElementById("click1").style.display = none;
+    document.getElementById("click2").style.display = none;
+    document.getElementById("click3").style.display = block;
+  }
