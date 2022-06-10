@@ -26,15 +26,18 @@
 
     <p id="d"></p>
 
+
+    <p id="lmonth"></p>
+
 </div>
 <div class="col-md-6">
     <h2>Menu shwow hide content</h2>
     <div class="test">
 
             <ul>
-                <li onclick="myClick()">Head</li>
-                <li onclick="myClick1()">Main</li>
-                <li onclick="myClick2()">Test</li>
+                <li onclick="myClick(this)">Head</li>
+                <li onclick="myClick1(this)">Main</li>
+                <li onclick="myClick2(this)">Test</li>
                 
             </ul>
             <div class="click" id="click1">
@@ -49,6 +52,18 @@
 
     </div>
 
+
+    <h2>Form Validation</h2>
+    <form action="jswork.html" class="form-s" onsubmit="submitF()">
+        <input type="text" id="name" onfocus="textEmpty(this)" onblur="textSet(this)">
+        <span id="fillit">Add Some Text</span>
+        <input type="email" name="" class="email" id="email" onfocus="textEmpty(this)" onblur="textSet(this)">
+        <span id="fillit2">Add Some Text</span>
+        <input type="submit" value="submit">
+    </form>
+
+
+    
 </div>
 
 <script src="script.js"></script>

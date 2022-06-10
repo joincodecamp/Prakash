@@ -32,6 +32,10 @@ if (month == 0) {
     document.getElementById("month12").style.color = "red";
 }
 
+//array
+var setMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+document.getElementById("lmonth").innerHTML = setMonth[5];
 
 
 //menus
@@ -55,3 +59,27 @@ function myClick() {
   }
 
 
+  //form validation
+  function textEmpty(show) {
+    show.style.borderColor = 'red';
+    show.style.borderStyle = 'solid';
+  }
+  function textSet(show) {
+    show.style.borderColor = '';
+  }
+ 
+
+//   function submitF() {
+//         const val = document.getElementById("email").value;
+    
+//        if (val == 1) {
+         
+
+//          } else if (val == ''){
+//             alert('asdhs');
+//             document.getElementById("fillit").style.display = block;
+//          document.getElementById("fillit2").style.display = block;
+//          }
+    
+//     }
+    

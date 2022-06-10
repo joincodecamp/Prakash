@@ -15,7 +15,7 @@
 .test li::marker{
     font-size: 0;
 }
-#click2, #click3{
+#click2, #click3, .form-s span{
     display: none;
 }
 .col-md-6{
@@ -31,4 +31,8 @@ body{
 }
 #click3 p{
     color: green;
+}
+
+input{
+   outline: unset;
 }
