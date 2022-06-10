@@ -37,7 +37,6 @@ input{
    outline: unset;
    width: 100%;
    float: left;
-   margin-bottom: 15px;
    padding: 15px;
 }
 input + span{
@@ -57,3 +56,7 @@ input + span{
 .error input + span{
     display: block;
 }
+.form-s .col-md-12{
+    margin-bottom: 20px;
+    float: left;
+ }
