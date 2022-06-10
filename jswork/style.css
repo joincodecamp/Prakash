@@ -44,6 +44,7 @@ input + span{
    color: red;
    width: 100%;
    float: left;
+   display: none;
  }
  #submit{
     cursor: pointer;
@@ -51,4 +52,8 @@ input + span{
 .error input{
     border-color: red;
     border-style: solid;
+}
+
+.error input + span{
+    display: block;
 }

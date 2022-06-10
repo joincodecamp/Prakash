@@ -60,14 +60,19 @@ function myClick() {
 
 
   //form validation
-//   function textEmpty(show) {
-//     show.style.borderColor = 'red';
-//     show.style.borderStyle = 'solid';
-//   }
-//   function textSet(show) {
-//     show.style.borderColor = '';
-//   }
- 
+  function textEmpty() {
+      //console.log(show);
+      document.getElementById("ssform").classList.remove("error");
+      document.getElementById("fillit1").style.display = none;
+  }
+  
+  function textEmpty2() {
+    //console.log(show);
+    document.getElementById("ssform2").classList.remove("error");
+    document.getElementById("fillit2").style.display = none;
+}
+
+
   //form
   function submitF() {
     // var x = document.getElementById("sform").elements.length;
@@ -75,17 +80,14 @@ function myClick() {
 
     var formName = document.forms["pcform"]["fname"].value;
     var formEmail = document.forms["pcform"]["email"].value;
+    
     if (formName == "" || formEmail == "") {
-        
-        alert("All fields must be entered.");
-        document.getElementById("sform").classList.add("error");
-      fillit = "All fields must be entered.";
-      document.getElementById("fillit1").innerHTML = fillit;
-      document.getElementById("fillit2").innerHTML = fillit;    
+        document.getElementById("ssform").classList.add("error");
+        document.getElementById("ssform2").classList.add("error");
       return false;
-    }else {
-        document.getElementById("sform").classList.remove("error");
     }
+    
+
 
     return true;
   }
