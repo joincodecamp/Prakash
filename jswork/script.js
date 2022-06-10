@@ -70,6 +70,9 @@ function myClick() {
  
   //form
   function submitF() {
+    // var x = document.getElementById("sform").elements.length;
+    // //document.getElementById("demo").innerHTML = "Found " + x + " elements in the form.";
+
     var formName = document.forms["pcform"]["fname"].value;
     var formEmail = document.forms["pcform"]["email"].value;
     if (formName == "" || formEmail == "") {
@@ -80,9 +83,7 @@ function myClick() {
       document.getElementById("fillit1").innerHTML = fillit;
       document.getElementById("fillit2").innerHTML = fillit;    
       return false;
-    }
-    
-    if(formName.length > 1 || formEmail.length > 1 ) {
+    }else {
         document.getElementById("sform").classList.remove("error");
     }
 
