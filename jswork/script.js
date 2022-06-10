@@ -60,26 +60,31 @@ function myClick() {
 
 
   //form validation
-  function textEmpty(show) {
-    show.style.borderColor = 'red';
-    show.style.borderStyle = 'solid';
-  }
-  function textSet(show) {
-    show.style.borderColor = '';
-  }
+//   function textEmpty(show) {
+//     show.style.borderColor = 'red';
+//     show.style.borderStyle = 'solid';
+//   }
+//   function textSet(show) {
+//     show.style.borderColor = '';
+//   }
  
+  //form
+  function submitF() {
+    var formName = document.forms["pcform"]["fname"].value;
+    var formEmail = document.forms["pcform"]["email"].value;
+    if (formName == "" || formEmail == "") {
+        
+        alert("All fields must be entered.");
+        document.getElementById("sform").classList.add("error");
+      fillit = "All fields must be entered.";
+      document.getElementById("fillit1").innerHTML = fillit;
+      document.getElementById("fillit2").innerHTML = fillit;    
+      return false;
+    }
+    
+    if(formName.length > 1 || formEmail.length > 1 ) {
+        document.getElementById("sform").classList.remove("error");
+    }
 
-//   function submitF() {
-//         const val = document.getElementById("email").value;
-    
-//        if (val == 1) {
-         
-
-//          } else if (val == ''){
-//             alert('asdhs');
-//             document.getElementById("fillit").style.display = block;
-//          document.getElementById("fillit2").style.display = block;
-//          }
-    
-//     }
-    
+    return true;
+  }
