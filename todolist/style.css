@@ -1,0 +1,33 @@
+#data{
+    width: 60%;
+    padding: 14px;
+}
+.todo button{
+    width: 14%;
+    padding: 13px;
+    font-size: 20px;
+    border: 0;
+}
+ul#todopaste {
+    margin-top: 30px;
+    padding: 0;
+}
+ul#todopaste li::marker {
+    font-size: 0;
+}
+ul#todopaste li button {
+    float: right;
+}
+ul#todopaste li{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+ul#todopaste li:nth-child(odd){
+   border: 1px solid green;
+}
+ul#todopaste li:nth-child(even){
+    border: 1px solid red;
+ }
+ .todoadd {
+    width: 20%;
+}
