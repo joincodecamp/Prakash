@@ -34,7 +34,7 @@
             var addlist = document.createElement('li'); //create li
            
             addlist.innerText = addData; //check li text and input values is = equal
-            //addnewlist.appendChild(addlist); //append the toodopaste list and li element
+            addnewlist.appendChild(addlist); //append the toodopaste list and li element
 
             if ( addData !== '' ) {
                 addnewlist.innerHTML += '<li>' + addData + ' <button onclick="Delete(this);">Delete</button> </li>';
@@ -49,14 +49,14 @@
         
         }
        
-        // function Delete(pc) {
-        //     pc.parentElement.remove();
-        // }
+        function Delete(pc) {
+            pc.parentElement.remove();
+        }
 
-            function Delete() {
-                var addnewlist = document.getElementById('todopaste'); 
-                addnewlist.removeChild(addnewlist.firstElementChild);
-            }
+            // function Delete() {
+            //     var addnewlist = document.getElementById('todopaste'); 
+            //     addnewlist.removeChild(addnewlist.firstElementChild);
+            // }
     </script>
 </body>
 
