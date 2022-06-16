@@ -1,12 +1,20 @@
 #data{
-    width: 60%;
+    width: 100%;
     padding: 14px;
+    height: 50px;
+  
+    border: 0;
+}
+#data:focus-visible{
+   outline: 0;
 }
 .todo button{
-    width: 14%;
-    padding: 13px;
-    font-size: 20px;
+    width: 100%;
+    padding: 0px;
+    font-size: 16px;
     border: 0;
+    height: 50px;
+    text-transform: uppercase;
 }
 ul#todopaste {
     margin-top: 30px;
@@ -16,11 +24,16 @@ ul#todopaste li::marker {
     font-size: 0;
 }
 ul#todopaste li button {
-    float: right;
+    margin: 0 10px;
+    border: 0;
+    padding: 6px 20px;
 }
 ul#todopaste li{
     margin-bottom: 30px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 ul#todopaste li:nth-child(odd){
    border: 1px solid green;
@@ -28,6 +41,29 @@ ul#todopaste li:nth-child(odd){
 ul#todopaste li:nth-child(even){
     border: 1px solid red;
  }
- .todoadd {
+ /* .todoadd {
     width: 20%;
+} */
+.bg-main{
+    background-color: #f9f9f9;
+    height: 600px;
 }
+#btn-1{
+    background-color: #8fbc8f;
+    color: #fff;
+}
+#btn-1:hover{
+    background-color: #fff;
+    color: #000;
+}
+#btn-2{
+    background-color: #2a7687;
+    color: #fff;
+}
+#btn-2:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul#todopaste li span{
+    width: 80%;
+} 
