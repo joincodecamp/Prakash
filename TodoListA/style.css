@@ -1,0 +1,87 @@
+#data{
+    width: 100%;
+    padding: 14px;
+    height: 50px;
+  
+    border: 0;
+}
+#data:focus-visible{
+   outline: 0;
+}
+.todo button{
+    width: 100%;
+    padding: 0px;
+    font-size: 16px;
+    border: 0;
+    height: 50px;
+    text-transform: uppercase;
+}
+#add-array-items {
+    margin-top: 30px;
+    padding: 0;
+}
+
+#add-array-items p i {
+    margin: 0 10px;
+    border: 0;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+#add-array-items p{
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#add-array-items p:nth-child(odd){
+   border: 1px solid green;
+}
+#add-array-items p:nth-child(even){
+    border: 1px solid red;
+ }
+ /* .todoadd {
+    width: 20%;
+} */
+.bg-main{
+    background-color: #f9f9f9;
+    /* height: 600px; */
+}
+#btn-1{
+    background-color: #8fbc8f;
+    color: #fff;
+}
+#btn-1:hover{
+    background-color: #fff;
+    color: #000;
+}
+#btn-2{
+    background-color: #2a7687;
+    color: #fff;
+}
+#btn-2:hover{
+    background-color: #fff;
+    color: #000;
+}
+#add-array-items p span{
+    width: 80%;
+} 
+
+/* .checked{
+    background-color: red;
+} */
+
+p.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #8fbc8f;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 20px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    
+}
