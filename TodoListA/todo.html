@@ -54,7 +54,6 @@
             var addnewlist = document.getElementById('add-array-items');
             addnewlist.innerHTML = "";
 
-
             for (let i = 0; i < itemsArr.length; i++) {
                 const item = itemsArr[i];
                 const itemValue = itemsArr[i].value;
@@ -123,7 +122,7 @@
         // };
 
         function checked(id) {
-            console.log(id);
+            //console.log(id);
             let cur = document.getElementById(id);
             if (cur.classList.contains('checked')) {
                 cur.classList.remove('checked');
